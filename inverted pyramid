@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int rows, i, j;
+
+    // Ask user for number of rows
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+
+    // Generate inverted pyramid
+    for (i = rows; i >= 1; i--) {
+        for (j = 1; j <= i; j++) {
+            printf("%d ", j);
+        }
+        printf("\n"); // Move to next line after each row
+    }
+
+    return 0;
+}
